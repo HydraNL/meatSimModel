@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_nye_AO8DEeS4gabx3eGhhQ" name="NewModel">
+  <packagedElement xmi:type="uml:Package" xmi:id="_I5gqQO8EEeS4gabx3eGhhQ" clientDependency="_OgadkO-iEeSvf-f5l-1J8Q" name="framework">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_OgadkO-iEeSvf-f5l-1J8Q" client="_I5gqQO8EEeS4gabx3eGhhQ"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_jDvPUO-wEeSvf-f5l-1J8Q" name="framework">
+      <packagedElement xmi:type="uml:Class" xmi:id="_g6og8O8EEeS4gabx3eGhhQ" name="Agent" isAbstract="true">
+        <eAnnotations xmi:id="_1ceb0O-dEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_1ceb0e-dEeSvf-f5l-1J8Q" key="Role"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_O7bSsO-vEeSvf-f5l-1J8Q" annotatedElement="_g6og8O8EEeS4gabx3eGhhQ">
+          <body>myAction is a Social Practice and a Social Practice has an embodiment variable, if we choose Social Practices to represent a multiple of actions we should make an action class, myAction should be an Action and action has an embodiment</body>
+        </ownedComment>
+        <ownedComment xmi:id="_Vl-CoO-wEeSvf-f5l-1J8Q" annotatedElement="_g6og8O8EEeS4gabx3eGhhQ">
+          <body>chooseAction needs a temporary variable named candidateActions()</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_l5oDIO8HEeS4gabx3eGhhQ" name="myContext" visibility="private" type="_7grLcO8EEeS4gabx3eGhhQ" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l5oqMO8HEeS4gabx3eGhhQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l5oqMe8HEeS4gabx3eGhhQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SSnLkO-cEeSvf-f5l-1J8Q" name="mySocialPractices" visibility="private" type="_51zlEO8EEeS4gabx3eGhhQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SSnLke-cEeSvf-f5l-1J8Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SSnLku-cEeSvf-f5l-1J8Q" value="*"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_g2FcEO-cEeSvf-f5l-1J8Q" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_pMe-8O-fEeSvf-f5l-1J8Q" name="myValues" visibility="private" type="_-b_GAO8EEeS4gabx3eGhhQ" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pMe-8e-fEeSvf-f5l-1J8Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pMe-8u-fEeSvf-f5l-1J8Q" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_E8cL8O-tEeSvf-f5l-1J8Q" name="ID" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E8cL8e-tEeSvf-f5l-1J8Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E8cL8u-tEeSvf-f5l-1J8Q" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_E8cL8--tEeSvf-f5l-1J8Q">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_rbz_cO-uEeSvf-f5l-1J8Q" name="myAction" visibility="private" type="_51zlEO8EEeS4gabx3eGhhQ" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rbz_ce-uEeSvf-f5l-1J8Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rbz_cu-uEeSvf-f5l-1J8Q" value="1"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_TNO0AO-MEeSvf-f5l-1J8Q" name="step" visibility="private"/>
+        <ownedOperation xmi:id="_Y6kKQO-MEeSvf-f5l-1J8Q" name="move" visibility="private"/>
+        <ownedOperation xmi:id="_ZN7yMO-MEeSvf-f5l-1J8Q" name="chooseAction" visibility="private"/>
+        <ownedOperation xmi:id="_igCPsO-MEeSvf-f5l-1J8Q" name="checkAffordances" visibility="private"/>
+        <ownedOperation xmi:id="_jppAcO-qEeSvf-f5l-1J8Q" name="calculateOverlap" visibility="private">
+          <ownedParameter xmi:id="_jppAcu-qEeSvf-f5l-1J8Q" name="SocialPractice"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mCg8Uu-qEeSvf-f5l-1J8Q" name="checkTriggers" visibility="private"/>
+        <ownedOperation xmi:id="_5PP28O-qEeSvf-f5l-1J8Q" name="checkIntentions" visibility="private"/>
+        <ownedOperation xmi:id="_50RPkO-qEeSvf-f5l-1J8Q" name="act" visibility="private"/>
+        <ownedOperation xmi:id="_6LDX4O-qEeSvf-f5l-1J8Q" name="learn" visibility="private"/>
+        <ownedOperation xmi:id="_ANBjkO-6EeSvf-f5l-1J8Q" name="evaluate" visibility="private"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_51zlEO8EEeS4gabx3eGhhQ" name="SocialPractice" isAbstract="true">
+        <eAnnotations xmi:id="_7gzVwO-dEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_7gzVwe-dEeSvf-f5l-1J8Q" key="Description"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_Ye1U4O-qEeSvf-f5l-1J8Q" annotatedElement="_51zlEO8EEeS4gabx3eGhhQ">
+          <body>use Hashmap with agents and venue ID</body>
+        </ownedComment>
+        <ownedComment xmi:id="_qIAs4O-8EeSvf-f5l-1J8Q" annotatedElement="_51zlEO8EEeS4gabx3eGhhQ">
+          <body>Make affordances a list of context objects. Each object represent a context precondition (i.e. Meat Venue).&#xD;
+Less than ideal is that these objects are thus fake, they only represent a class type that will be used in checkAffordances.&#xD;
+Another option would be to make a seperate checkAffordances method for each SocialPractice</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_GQUTEO8HEeS4gabx3eGhhQ" name="purpose" visibility="private" type="_-b_GAO8EEeS4gabx3eGhhQ" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GQUTEe8HEeS4gabx3eGhhQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GQUTEu8HEeS4gabx3eGhhQ" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Sz6nAO-KEeSvf-f5l-1J8Q" name="affordances" visibility="private" type="_7grLcO8EEeS4gabx3eGhhQ" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Sz6nAe-KEeSvf-f5l-1J8Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sz6nAu-KEeSvf-f5l-1J8Q" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_VCPfwO-KEeSvf-f5l-1J8Q" name="performanceHistory" visibility="private" type="_7grLcO8EEeS4gabx3eGhhQ" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VCPfwe-KEeSvf-f5l-1J8Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VCPfwu-KEeSvf-f5l-1J8Q" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_87RqUO-KEeSvf-f5l-1J8Q" name="evaluationList" visibility="private" type="_ehPJwO-KEeSvf-f5l-1J8Q" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_87RqUe-KEeSvf-f5l-1J8Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_87RqUu-KEeSvf-f5l-1J8Q" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_r7diIO-pEeSvf-f5l-1J8Q" name="performanceHistoryMap" visibility="private" aggregation="composite">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r7eJMO-pEeSvf-f5l-1J8Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r7eJMe-pEeSvf-f5l-1J8Q" value="1"/>
+          <qualifier xmi:id="_0bLGIO-5EeSvf-f5l-1J8Q" name="evaluationList" visibility="private" type="_ehPJwO-KEeSvf-f5l-1J8Q" aggregation="composite">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0bLGIe-5EeSvf-f5l-1J8Q"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0bLGIu-5EeSvf-f5l-1J8Q" value="*"/>
+          </qualifier>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_0sopkO-5EeSvf-f5l-1J8Q" name="evaluation" visibility="private" aggregation="composite">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0sopke-5EeSvf-f5l-1J8Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0sopku-5EeSvf-f5l-1J8Q" value="1"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_NFSv8O-NEeSvf-f5l-1J8Q" name="embodiment" visibility="public" isAbstract="true"/>
+        <ownedOperation xmi:id="_MVHxEO-qEeSvf-f5l-1J8Q" name="updatePerformanceHistory"/>
+        <ownedOperation xmi:id="_889e0O-qEeSvf-f5l-1J8Q" name="updateEvaluation"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_-b_GAO8EEeS4gabx3eGhhQ" name="Value" isAbstract="true">
+        <eAnnotations xmi:id="__0lfIO-dEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="__0lfIe-dEeSvf-f5l-1J8Q" key="Description"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_cwSGgPIcEeSTwfn_gDnsDw" annotatedElement="_-b_GAO8EEeS4gabx3eGhhQ">
+          <body>use instanceof or add compare method</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_jSbCQO8FEeS4gabx3eGhhQ" name="satisfaction" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jSn2kO8FEeS4gabx3eGhhQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jSn2ke8FEeS4gabx3eGhhQ" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_DWusQO8GEeS4gabx3eGhhQ">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_IkZrAO8GEeS4gabx3eGhhQ" name="threshold" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IkZrAe8GEeS4gabx3eGhhQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IkZrAu8GEeS4gabx3eGhhQ" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_IkZrA-8GEeS4gabx3eGhhQ">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_VvJ1EO8GEeS4gabx3eGhhQ" name="importance" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VvJ1Ee8GEeS4gabx3eGhhQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VvJ1Eu8GEeS4gabx3eGhhQ" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_VvJ1E-8GEeS4gabx3eGhhQ">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_XATAgO-NEeSvf-f5l-1J8Q" name="getNeed"/>
+        <ownedOperation xmi:id="_qQjNkPIcEeSTwfn_gDnsDw" name="equals"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7grLcO8EEeS4gabx3eGhhQ" name="Context">
+        <eAnnotations xmi:id="_5tAc4O-dEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_7MyNkO-dEeSvf-f5l-1J8Q" key="MomentInterval"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_RcqVoO-JEeSvf-f5l-1J8Q" name="physical" visibility="private" type="_xIeokO8EEeS4gabx3eGhhQ" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RczfkO-JEeSvf-f5l-1J8Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rczfke-JEeSvf-f5l-1J8Q" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_qoxt4O-LEeSvf-f5l-1J8Q" name="timestep" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qoxt4e-LEeSvf-f5l-1J8Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qoxt4u-LEeSvf-f5l-1J8Q" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_qoxt4--LEeSvf-f5l-1J8Q">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MiFlIO-hEeSvf-f5l-1J8Q" name="social" visibility="private" type="_CyAyMO-hEeSvf-f5l-1J8Q" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MiFlIe-hEeSvf-f5l-1J8Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MiFlIu-hEeSvf-f5l-1J8Q" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ehPJwO-KEeSvf-f5l-1J8Q" name="Evaluation">
+        <eAnnotations xmi:id="__E68wO-dEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="__E68we-dEeSvf-f5l-1J8Q" key="Description"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_gl9akO-KEeSvf-f5l-1J8Q" name="grade" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_wAB74O-KEeSvf-f5l-1J8Q" name="currentContext" visibility="private" type="_7grLcO8EEeS4gabx3eGhhQ" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wAB74e-KEeSvf-f5l-1J8Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wAB74u-KEeSvf-f5l-1J8Q" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_xIeokO8EEeS4gabx3eGhhQ" name="PhysicalContext" isAbstract="true">
+        <eAnnotations xmi:id="_8TkPcO-dEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_9uVkUO-dEeSvf-f5l-1J8Q" key="Thing"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_TtjhwO-rEeSvf-f5l-1J8Q" name="ID" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ttjhwe-rEeSvf-f5l-1J8Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ttjhwu-rEeSvf-f5l-1J8Q" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Ttjhw--rEeSvf-f5l-1J8Q">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_CyAyMO-hEeSvf-f5l-1J8Q" name="SocialContext">
+        <eAnnotations xmi:id="_CyAyMe-hEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_CyAyMu-hEeSvf-f5l-1J8Q" key="Thing"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_GcGFAO-mEeSvf-f5l-1J8Q" name="myAgents" visibility="private" type="_g6og8O8EEeS4gabx3eGhhQ" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GcGsEO-mEeSvf-f5l-1J8Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GcGsEe-mEeSvf-f5l-1J8Q" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_k-OmEO-wEeSvf-f5l-1J8Q" name="meatEating">
+      <packagedElement xmi:type="uml:Class" xmi:id="_Sn5moO--EeSvf-f5l-1J8Q" name="MeatSimBuilder"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_lox1YO-kEeSvf-f5l-1J8Q" name="SelfTranscendence">
+        <eAnnotations xmi:id="_lox1Ye-kEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_lox1Yu-kEeSvf-f5l-1J8Q" key="Description"/>
+        </eAnnotations>
+        <generalization xmi:id="_sNEW4O-mEeSvf-f5l-1J8Q" general="_-b_GAO8EEeS4gabx3eGhhQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ehPK8O-kEeSvf-f5l-1J8Q" name="VegEatingPractice">
+        <eAnnotations xmi:id="_ehPK8e-kEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_ehPK8u-kEeSvf-f5l-1J8Q" key="Description"/>
+        </eAnnotations>
+        <generalization xmi:id="_ypluYO-mEeSvf-f5l-1J8Q" general="_51zlEO8EEeS4gabx3eGhhQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_TBYxkO-mEeSvf-f5l-1J8Q" name="VegVenue">
+        <eAnnotations xmi:id="_TBYxke-mEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_TBYxku-mEeSvf-f5l-1J8Q" key="Thing"/>
+        </eAnnotations>
+        <generalization xmi:id="_1Xdp4O-mEeSvf-f5l-1J8Q" general="_xIeokO8EEeS4gabx3eGhhQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Hl4CcO-kEeSvf-f5l-1J8Q" name="Eater1">
+        <eAnnotations xmi:id="_Hl4Cce-kEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Hl4Ccu-kEeSvf-f5l-1J8Q" key="Role"/>
+        </eAnnotations>
+        <generalization xmi:id="_NyXH8PIXEeSTwfn_gDnsDw" general="_g6og8O8EEeS4gabx3eGhhQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_5BmrQO-kEeSvf-f5l-1J8Q" name="Conservation">
+        <eAnnotations xmi:id="_5BmrQe-kEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_5BmrQu-kEeSvf-f5l-1J8Q" key="Description"/>
+        </eAnnotations>
+        <generalization xmi:id="_t2RJUO-mEeSvf-f5l-1J8Q" general="_-b_GAO8EEeS4gabx3eGhhQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_bUXUYO-mEeSvf-f5l-1J8Q" name="MixedVenue">
+        <eAnnotations xmi:id="_bUXUYe-mEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_bUXUYu-mEeSvf-f5l-1J8Q" key="Thing"/>
+        </eAnnotations>
+        <generalization xmi:id="_1wyv4O-mEeSvf-f5l-1J8Q" general="_xIeokO8EEeS4gabx3eGhhQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VmTa0O-lEeSvf-f5l-1J8Q" name="MeatVenue">
+        <eAnnotations xmi:id="_VmTa0e-lEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_VmTa0u-lEeSvf-f5l-1J8Q" key="Thing"/>
+        </eAnnotations>
+        <generalization xmi:id="_07_O0O-mEeSvf-f5l-1J8Q" general="_xIeokO8EEeS4gabx3eGhhQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_5T7xYO-kEeSvf-f5l-1J8Q" name="Openness">
+        <eAnnotations xmi:id="_5T7xYe-kEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_5T7xYu-kEeSvf-f5l-1J8Q" key="Description"/>
+        </eAnnotations>
+        <generalization xmi:id="_rh4r4O-mEeSvf-f5l-1J8Q" general="_-b_GAO8EEeS4gabx3eGhhQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_cSGZ4O-kEeSvf-f5l-1J8Q" name="MeatEatingPractice">
+        <eAnnotations xmi:id="_cSGZ4e-kEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_cSPj0O-kEeSvf-f5l-1J8Q" key="Description"/>
+        </eAnnotations>
+        <generalization xmi:id="_xTO_cO-mEeSvf-f5l-1J8Q" general="_51zlEO8EEeS4gabx3eGhhQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_3gEAAO-kEeSvf-f5l-1J8Q" name="SelfEnhancement">
+        <eAnnotations xmi:id="_3gEAAe-kEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_3gEAAu-kEeSvf-f5l-1J8Q" key="Description"/>
+        </eAnnotations>
+        <generalization xmi:id="_tUjjYO-mEeSvf-f5l-1J8Q" general="_-b_GAO8EEeS4gabx3eGhhQ"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_4zxqoO-kEeSvf-f5l-1J8Q" name="SelfTranscendence">
+          <eAnnotations xmi:id="_4zxqoe-kEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_4zxqou-kEeSvf-f5l-1J8Q" key="Description"/>
+          </eAnnotations>
+        </nestedClassifier>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_2y2V4O--EeSvf-f5l-1J8Q" name="main">
+      <packagedElement xmi:type="uml:Class" xmi:id="_bVx8wO--EeSvf-f5l-1J8Q" name="AbstractBuilder" isAbstract="true">
+        <ownedAttribute xmi:id="_AC2aQO_CEeSvf-f5l-1J8Q" name="myGridFactory">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AC2aQe_CEeSvf-f5l-1J8Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AC2aQu_CEeSvf-f5l-1J8Q" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_nhz38O_CEeSvf-f5l-1J8Q" name="myGrid">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nhz38e_CEeSvf-f5l-1J8Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nhz38u_CEeSvf-f5l-1J8Q" value="1"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_m2g6MPIdEeSTwfn_gDnsDw" name="build"/>
+        <ownedOperation xmi:id="_uRWUEPIdEeSTwfn_gDnsDw" name="setID" isAbstract="true"/>
+        <ownedOperation xmi:id="_xEejAfIdEeSTwfn_gDnsDw" name="makeGrid"/>
+        <ownedOperation xmi:id="_yFxA4PIdEeSTwfn_gDnsDw" name="createContext"/>
+        <ownedOperation xmi:id="_yfFf0PIdEeSTwfn_gDnsDw" name="addAgents" isAbstract="true"/>
+        <ownedOperation xmi:id="_y4gscPIdEeSTwfn_gDnsDw" name="addEnvironment"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_izjV4O--EeSvf-f5l-1J8Q" name="CFG">
+        <ownedAttribute xmi:id="_5ducMO_IEeSvf-f5l-1J8Q" name="GUI">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EBoolean"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_pPbNIO--EeSvf-f5l-1J8Q" name="Helper">
+        <ownedComment xmi:id="_qumHkO_DEeSvf-f5l-1J8Q" annotatedElement="_7grLcO8EEeS4gabx3eGhhQ">
+          <body>the Builder creates one context object per venue per round&#xD;
+make sure the Builder does this before an agent moves</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_DrAIgO_JEeSvf-f5l-1J8Q" name="context.xml"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_PfmF0PIXEeSTwfn_gDnsDw" name="meatSimBuildersToAbstractBuilders" memberEnd="_PfmF0fIXEeSTwfn_gDnsDw _PfmF1PIXEeSTwfn_gDnsDw" navigableOwnedEnd="_PfmF0fIXEeSTwfn_gDnsDw _PfmF1PIXEeSTwfn_gDnsDw">
+      <ownedEnd xmi:id="_PfmF0fIXEeSTwfn_gDnsDw" name="meatSimBuilders" type="_Sn5moO--EeSvf-f5l-1J8Q" association="_PfmF0PIXEeSTwfn_gDnsDw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PfmF0vIXEeSTwfn_gDnsDw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PfmF0_IXEeSTwfn_gDnsDw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_PfmF1PIXEeSTwfn_gDnsDw" name="abstractBuilders" type="_bVx8wO--EeSvf-f5l-1J8Q" association="_PfmF0PIXEeSTwfn_gDnsDw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PfmF1fIXEeSTwfn_gDnsDw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PfmF1vIXEeSTwfn_gDnsDw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
