@@ -38,6 +38,10 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rbz_ce-uEeSvf-f5l-1J8Q"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rbz_cu-uEeSvf-f5l-1J8Q" value="1"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_D6etsPLkEeSPa794RnFlIg" name="candidateContextLIst" type="_7grLcO8EEeS4gabx3eGhhQ" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D6f70PLkEeSPa794RnFlIg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D6f70fLkEeSPa794RnFlIg" value="1"/>
+        </ownedAttribute>
         <ownedOperation xmi:id="_TNO0AO-MEeSvf-f5l-1J8Q" name="step" visibility="private"/>
         <ownedOperation xmi:id="_Y6kKQO-MEeSvf-f5l-1J8Q" name="move" visibility="private"/>
         <ownedOperation xmi:id="_ZN7yMO-MEeSvf-f5l-1J8Q" name="chooseAction" visibility="private"/>
@@ -164,7 +168,7 @@ Another option would be to make a seperate checkAffordances method for each Soci
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wAB74u-KEeSvf-f5l-1J8Q" value="1"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_xIeokO8EEeS4gabx3eGhhQ" name="PhysicalContext" isAbstract="true">
+      <packagedElement xmi:type="uml:Class" xmi:id="_xIeokO8EEeS4gabx3eGhhQ" name="Location" isAbstract="true">
         <eAnnotations xmi:id="_8TkPcO-dEeSvf-f5l-1J8Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_9uVkUO-dEeSvf-f5l-1J8Q" key="Thing"/>
         </eAnnotations>
@@ -184,6 +188,15 @@ Another option would be to make a seperate checkAffordances method for each Soci
         <ownedAttribute xmi:id="_GcGFAO-mEeSvf-f5l-1J8Q" name="myAgents" visibility="private" type="_g6og8O8EEeS4gabx3eGhhQ" aggregation="composite">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GcGsEO-mEeSvf-f5l-1J8Q"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GcGsEe-mEeSvf-f5l-1J8Q" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PQO0EPLbEeSPa794RnFlIg" name="PhysicalContext">
+        <eAnnotations xmi:id="_PQO0EfLbEeSPa794RnFlIg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_PQO0EvLbEeSPa794RnFlIg" key="Thing"/>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_PQO0E_LbEeSPa794RnFlIg" name="myLocation" visibility="private" type="_g6og8O8EEeS4gabx3eGhhQ" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PQO0FPLbEeSPa794RnFlIg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PQO0FfLbEeSPa794RnFlIg" value="*"/>
         </ownedAttribute>
       </packagedElement>
     </packagedElement>
